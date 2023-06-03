@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+}
+
+.container {
+  background-image: url(images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.registration-screen {
+  background-image: url(images/bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.filter-item {
+  border-radius: 4px;
+  padding: 5px;
+  width: 45%;
+}
+
+#congrats-screen {
+  background-position: center;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.registration-header {
+  margin-top: 200px;
+}
+
+.otp-header {
+  font-size: small;
+  margin-bottom: 25px;
+  line-height: 25px;
+  padding: 0 13%;
+}
+
+p {
+  color: #f3f3f3;
+  font-size: 16px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  line-height: 28px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-grow-1 {
+  flex: 1;
+}
+
+.mr1 {
+  margin-right: 10px;
+}
+
+.age-wrapper {
+  width: 25%;
+}
+
+.terms-row {
+  width: 248px;
+  font-size: 12px;
+}
+
+.align-center {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+button {
+  width: 240px;
+  padding: 10px 20px;
+  background-color: rgba(255, 0, 94, 1);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+#otp-screen {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+#filter-screen {
+  display: none;
+}
+
+.filter-selection-container {
+  background: #240E2E;
+  box-shadow: 0px 15px 14px -2px rgba(0, 0, 0, 0.43);
+  border-radius: 25px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 84vw;
+  margin-top: 15%;
+}
+
+.filter-image {
+  width: 100%;
+  cursor: pointer;
+}
+
+#congrats-screen {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 10%;
+}
+
+#congrats-screen img {
+  width: 98vw;
+}

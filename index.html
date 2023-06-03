@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=375px, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section id="registration-screen">
+            <h1 class="registration-header">Registration</h1>
+            <form id="registration-form">
+                <input type="text" placeholder="Enter your unique code" required>
+                <div class="flex-container">
+                    <div class="flex-grow-1 mr1">
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="age-wrapper">
+                        <input type="number" placeholder="Age" required>
+                    </div>
+                </div>
+                <input type="tel" placeholder="Enter your mobile number" required>
+                <input type="email" placeholder="Enter your email address" required>
+                <select required>
+                    <option value="">Select your city</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Mysore">Mysore</option>
+                    <option value="Other">Other</option>
+                </select>
+                <div class="flex-container terms-row align-center" style="margin-bottom: 20px;">
+                    <input style="display: inline-block;width: 10px; padding:0; margin:0; margin-right:10px;"
+                        class="mr1" type="checkbox" id="terms" required>
+                    <label for="terms">I ACCEPT THE TERMS & CONDITIONS</label>
+                </div>
+                <div class="align-center  flex-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+        <section id="otp-screen">
+            <h1>ENTER OTP</h1>
+            <h2 class="otp-header">OTP HAS BEEN SENT TO REGISTERED MOBILE NUMBER</h2>
+            <form id="otp-form">
+                <input type="text" placeholder="Enter OTP" required>
+                <div class="flex-container terms-row align-center">
+                    <p>Didn't receive OTP? <a href="#">Resend OTP</a></p>
+                </div>
+                <div class="flex-container terms-row align-center">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+        <section id="filter-screen">
+            <div id="filter-images" class="filter-selection-container">
+                <h2 style="
+                margin: 12px 0;
+                line-height: 30px;
+            ">
+                    Try out the coolest filters with just a click!
+                </h2>
+                <div class="flex-container flex-wrap text-align-center">
+                    <div class="filter-item">
+                        <img class="filter-image" src="images/filter1.png" alt="Happy">
+                        <h3>WHACKY HAT</h3>
+                    </div>
+                    <div class="filter-item">
+                        <img class="filter-image" src="images/filter2.png" alt="Sad">
+                        <h3> WITTY WIGS</h3>
+                    </div>
+                    <div class="filter-item">
+                        <img class="filter-image" src="images/filter3.png" alt="Happy">
+                        <h3>MUSE-STACHE</h3>
+                    </div>
+                    <div class="filter-item">
+                        <img class="filter-image" src="images/filter4.png" alt="Sad">
+                        <h3>SHADY TONES</h3>
+                    </div>
+                    <!-- <img class="filter-image" src="images/filter3.png" alt="Excited">
+                        <img class="filter-image" src="images/filter4.png" alt="Excited"> -->
+                </div>
+
+            </div>
+        </section>
+        <section id="congrats-screen">
+            <h1></h1>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
