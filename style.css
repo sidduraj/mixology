@@ -3,16 +3,16 @@ body {
 }
 
 .container {
-  background-image: url(images/bg.png);
-  background-size: cover;
+  background-image: url(images/titlelogo.png), url(images/Fruit\ Flow.png),url(images/boootom\ design.png), url(images/bg.png);
+  background-size: 40%, 100%, 100%, cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top 50px center, top,bottom,center;
   margin: 0;
   padding: 20px;
   height: 100vh;
   font-family: Arial, sans-serif;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .registration-screen {

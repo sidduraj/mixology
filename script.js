@@ -11,13 +11,13 @@ registrationForm.addEventListener('submit', function(e) {
 
 otpForm.addEventListener('submit', function(e) {
   e.preventDefault();
-  moodSelectionScreen();
+  filterSelectionScreen();
 });
 
 filterImages.forEach(function(image) {
 image.addEventListener('click', function() {
-    const selectedMood = this.getAttribute('data-filter');
-    thankYouScreen(selectedMood);
+    const selectedFilter = this.getAttribute('data-filter');
+    thankYouScreen(selectedFilter);
   });
 });
 
@@ -26,12 +26,12 @@ function otpScreen() {
   document.getElementById('otp-screen').style.display = 'block';
 }
 
-function moodSelectionScreen() {
+function filterSelectionScreen() {
   document.getElementById('otp-screen').style.display = 'none';
   document.getElementById('filter-screen').style.display = 'block';
 }
 
-function thankYouScreen(mood) {
+function thankYouScreen(filter) {
   document.getElementById('filter-screen').style.display = 'none';
   document.getElementById('congrats-screen').style.display = 'block';
   const congratsScreen = document.getElementById('congrats-screen');
