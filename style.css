@@ -3,13 +3,14 @@ body {
 }
 
 .container {
-  background-image: url(images/titlelogo.png), url(images/Fruit\ Flow.png),url(images/boootom\ design.png), url(images/bg.png);
-  background-size: 40%, 100%, 100%, cover;
+
+  background-image: url(images/titlelogo.png),url(images/splashLeft.png), url(images/splashRight.png),url(images/bottomdesign.png), url(images/bg.png);
+  background-position: top 35px center, top -17px left,top -11px right, bottom,center;
+  background-size: 40%, 44%, 64%, 100%, cover;
   background-repeat: no-repeat;
-  background-position: top 50px center, top,bottom,center;
   margin: 0;
   padding: 20px;
-  height: 100vh;
+  height: 97vh;
   font-family: Arial, sans-serif;
   max-width: 500px;
   margin: 0;
@@ -186,4 +187,25 @@ button {
 
 #congrats-screen img {
   width: 98vw;
+}
+
+
+@media screen and (max-width: 375px) {
+  .registration-header {
+    margin-top: 140px;
+  }
+  h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .container{
+    background-position: top 20px center, top -17px left,top -11px right, bottom,center;
+  }
+  .filter-selection-container{
+    margin-top: 15%;
+    padding: 5px;
+  }
+  .filter-item{
+    width: 36%;
+  }
 }
